@@ -8,12 +8,6 @@ body {
   line-height: 1.5em;
 }
 
-#wrapper {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 5%;
-}
-
 a {
   text-decoration: none;
 }
@@ -96,9 +90,6 @@ footer {
   color: #ccc;
   width: 100%;
   padding-top: 20px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   padding-bottom: 10px;
 }
 
@@ -154,10 +145,17 @@ PAGE: PORTFOLIO
  }
 
 #gallery {
-  margin: 50px 0 0 0;
-  padding: 0;
   list-style: none;
   text-align: center;
+  width: 100%;
+  border-bottom: 1px solid #DADADA;
+  overflow: auto;
+}
+
+#galleryList {
+  max-width: 940px;
+  margin: 100px auto;
+  overflow: auto;
 }
 
 #gallery img{
@@ -237,6 +235,16 @@ PAGE: ABOUT
 #about {
   font-size: 1.5em;
   margin-bottom: 1em;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  clear: both;
+  border-bottom: 1px solid #DADADA;
+}
+
+#aboutContent {
+  max-width: 940px;
+  margin: 100px auto;
 }
 
 
@@ -244,6 +252,19 @@ PAGE: ABOUT
 /**********************************
 PAGE: CONTACT
 ***********************************/
+#contact {
+  max-width: 100%;
+}
+
+#contactContent {
+  max-width: 940px;
+  margin: 100px auto; 
+}
+
+
+#primary, #secondary {
+  margin-bottom: 100px;
+}
 
 .contact-info {
   list-style: none;
