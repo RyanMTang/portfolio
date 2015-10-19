@@ -1,0 +1,358 @@
+/**********************************
+GENERAL
+***********************************/
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-image: url(../img/natural-paper.png);
+  line-height: 1.5em;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+}
+
+nav a {
+  font-size: 0.9em;
+}
+
+
+
+/**********************************
+HEADING
+***********************************/
+
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+  font-family: 'Lobster', cursive;
+}
+
+h1 {
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: bold;
+  line-height: 0.8em;
+}
+
+/**********************************
+NAVIGATION
+***********************************/
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+}
+
+
+
+/**********************************
+FOOTER
+***********************************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  color: #ccc;
+  width: 100%;
+  padding-top: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 10px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  padding: 0 10px;
+}
+
+
+
+/**********************************
+PAGE: PORTFOLIO
+***********************************/
+#intro {
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #DADADA;
+  background-color: #fff;
+  background-image: url(../img/gplay.png);
+}
+
+#hi {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5em;
+}
+
+#intro p {
+  font-size: 2em;
+  display: inline;
+ }
+
+ #intro span {
+  display: block;
+  margin-bottom: 30px;
+ }
+
+ #me {
+  font-family: 'Fredoka One', cursive;
+ }
+
+ #name {
+  font-family: 'Fredoka One', cursive;
+  color: #8A1702;
+ }
+
+ #welcome {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2.5em;
+  margin-top: 15px;
+ }
+
+#gallery {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+#thumbnail{
+  width: 100%;
+  max-height: 200px;
+  border: 1px solid #E1E0DE;
+}
+
+#gallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+}
+
+#gallery li a p {
+  display:none;
+}
+
+#overlay {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#modal {
+  width: 20%;
+  height: 50%;
+  position:absolute;
+  background: white;
+  border-radius:10px;
+  padding:8px;
+  left: 60%;
+  top: 40%;
+
+}
+
+#laptopContent {
+  width: 29%;
+  height: 36.5%;
+  position: absolute;
+  top: 23.5%;
+  left: 23%;
+}
+
+#laptopPic {
+  position: absolute;
+  width: 45%;
+  top: 20%;
+  left: 15%;
+  z-index: 1;
+}
+
+
+#content {
+  border-radius:8px;
+  background:#fff;
+  padding:20px;
+}
+
+#close {
+  position:absolute;
+  background-image:url('../img/close.png');
+  background-size: cover; 
+  width:25px;
+  height:25px;
+  display:block;
+  bottom: 7px;
+  right: 7px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#content img {
+  width: 60%;
+}
+
+
+/**********************************
+PAGE: ABOUT
+***********************************/
+
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}
+
+#about {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+
+
+/**********************************
+PAGE: CONTACT
+***********************************/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+  background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+  background-image: url('../img/twitter.png');
+}
+
+#general, #contactDetails {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+
+
+/**********************************
+COLORS
+***********************************/
+
+/* site body */
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+/* dark grey header */
+header {
+  background-color: #000;
+  background-image: url(../img/dark-mosaic.png);
+
+}
+
+footer {
+  background-color: #464646;
+  background-image: url(../img/dark-mosaic.png);
+}
+
+/* nav background on mobile */
+nav {
+  background: #191919;
+  background-image: url(../img/dark-mosaic.png);
+}
+
+/* logo text */
+h1, h2 {
+  color: #fff;
+}
+
+/* links */
+a {
+  color: #761302;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: #fff;
+}
+
+/* selected nav link */
+nav a.active, nav a:hover {
+  color: #626262;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
