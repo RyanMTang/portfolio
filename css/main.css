@@ -116,7 +116,8 @@ PAGE: PORTFOLIO
   width: 100%;
   text-align: center;
   display: block;
-  padding-bottom: 50px;
+  padding-top: 250px;
+  padding-bottom: 150px;
 }
 
 #hi {
@@ -268,11 +269,6 @@ PAGE: ABOUT
 #map {
   display: none;
 }
-
-#mapHeading {
-  margin-top: 85px;
-}
-
 
 /**********************************
 PAGE: CONTACT

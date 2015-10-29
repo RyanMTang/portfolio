@@ -119,66 +119,65 @@
       {
         'lat': 51.0486, 
         'lng': -114.0708,
-        'name': 'Calgary'
+        'title': 'Calgary'
       },
       {
         'lat': 48.4222, 
         'lng': -123.3657,
-        'name': 'Victoria'
+        'title': 'Victoria'
       },
       {
         'lat': 54.5970, 
         'lng': -5.9300,
-        'name': 'Belfast'
+        'title': 'Belfast'
       },
       {
         'lat': 22.5500, 
         'lng': 114.1000,
-        'name': 'Shenzhen'
+        'title': 'Shenzhen'
       },
       {
         'lat': 42.9837, 
         'lng': -81.2497,
-        'name': 'London'
+        'title': 'London'
       },
       {
         'lat': 54.2667, 
         'lng': -110.7500,
-        'name': 'Bonnyville'
+        'title': 'Bonnyville'
       },
       {
         'lat': 39.9167, 
         'lng': 116.3833,
-        'name': 'Beijing'
+        'title': 'Beijing'
       },
       {
         'lat': 26.2667, 
         'lng': 50.1500,
-        'name': 'Dhahran'
+        'title': 'Dhahran'
       },
       {
         'lat': 44.2333, 
         'lng': -76.5000,
-        'name': 'Kingston'
+        'title': 'Kingston'
       },
       {
         'lat': 45.4214, 
         'lng': -75.6919,
-        'name': 'Ottawa'
+        'title': 'Ottawa'
       }
     ];
 
       for (i=0; i<$scope.locations.length; i++) {
         var marker = new google.maps.Marker ({
           position: new google.maps.LatLng($scope.locations[i].lat, $scope.locations[i].lng),
-          map: $scope.map
+          map: $scope.map,
+          title: $scope.locations[i].title
         });
       }
   });
 
   mainApp.controller('contactController', function($scope){
-
-
 
   });
 })();
