@@ -4,7 +4,6 @@ GENERAL
 
 body {
   font-family: 'Raleway', sans-serif;
-  background-image: url(../img/natural-paper.png);
   line-height: 1.5em;
 }
 
@@ -22,13 +21,14 @@ img {
   max-width: 100%;
 }
 
-h3 {
-  color: #000;
-  font-family: 'Raleway', sans-serif;
+nav a {
+  font-size: 0.8em;
+  position: relative;
+  z-index: 1;
 }
 
-nav a {
-  font-size: 0.9em;
+h3 {
+  font-weight: 600;
 }
 
 
@@ -46,9 +46,8 @@ header {
 }
 
 #logo {
-  text-align: center;
-  margin: 0;
   font-family: 'Lobster', cursive;
+  text-align: center;
 }
 
 h1 {
@@ -79,7 +78,7 @@ nav li {
 }
 
 nav a {
-  font-weight: 800;
+  font-weight: bold;
   padding: 15px 10px;
 }
 
@@ -118,9 +117,6 @@ PAGE: PORTFOLIO
   text-align: center;
   display: block;
   padding-bottom: 50px;
-  border-bottom: 1px solid #DADADA;
-  background-color: #fff;
-  background-image: url(../img/gplay.png);
 }
 
 #hi {
@@ -139,18 +135,18 @@ PAGE: PORTFOLIO
  }
 
  #me {
-  font-family: 'Fredoka One', cursive;
+  font-weight: bold;
  }
 
  #name {
-  font-family: 'Fredoka One', cursive;
-  color: #8A1702;
+  color: #5c8b68;
+  font-weight: bold;
  }
 
  #welcome {
-  font-family: 'Fredoka One', cursive;
   font-size: 2.5em;
-  margin-top: 15px;
+  line-height: 1.3em;
+  font-weight: bold;
  }
 
 #gallery {
@@ -161,7 +157,7 @@ PAGE: PORTFOLIO
 
 #thumbnail{
   width: 100%;
-  max-height: 200px;
+  max-height: 100px;
   border: 1px solid #E1E0DE;
 }
 
@@ -186,46 +182,58 @@ PAGE: PORTFOLIO
 }
 
 #modal {
-  width: 20%;
-  height: 50%;
+  width: 80%;
   position:absolute;
-  background: white;
-  border-radius:10px;
-  padding:8px;
-  left: 60%;
-  top: 40%;
-
+  background-color: #fff;
+  top: 20%
+  left: 10%;
+  right: 10%;
 }
 
-#laptopContent {
-  width: 29%;
-  height: 36.5%;
-  position: absolute;
-  top: 23.5%;
-  left: 23%;
+#modalTitle {
+  background: #5c8b68;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 20px;
 }
 
-#laptopPic {
-  position: absolute;
-  width: 45%;
-  top: 20%;
-  left: 15%;
-  z-index: 1;
+#modalDescription {
+  text-align: left;
+  margin: 30px 30px; 
 }
 
+#modalButton {
+  background: #af85a4;
+  padding: 10px 0;
+  border-radius: 5px;
+  border: none;
+  width: 60%;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+} 
 
-#content {
-  border-radius:8px;
-  background:#fff;
-  padding:20px;
+#modalButton:hover {
+  background: #8c5c7f;
+  cursor: pointer;
 }
+
+#laptop {
+  display: none;
+}
+
 
 #close {
   position:absolute;
   background-image:url('../img/close.png');
   background-size: cover; 
-  width:25px;
-  height:25px;
+  width:20px;
+  height:20px;
   display:block;
   bottom: 7px;
   right: 7px;
@@ -236,6 +244,8 @@ PAGE: PORTFOLIO
 #content img {
   width: 60%;
 }
+
+
 
 
 /**********************************
@@ -254,6 +264,11 @@ PAGE: ABOUT
   margin-bottom: 1em;
 }
 
+#mapDiv {
+  width: 100%;
+  height: 500px;
+  display: none;
+}
 
 
 /**********************************
@@ -276,21 +291,29 @@ PAGE: CONTACT
   margin: 0 0 10px;
 }
 
-.contact-info li.phone a {
-  background-image: url('../img/phone.png');
+.contact-info li.facebook a {
+  background-image: url('../img/social-media/facebook.png');
 }
 
-.contact-info li.mail a {
-  background-image: url('../img/mail.png');
+.contact-info li.linkedin a {
+  background-image: url('../img/social-media/linkedin.png');
 }
 
 .contact-info li.twitter a {
-  background-image: url('../img/twitter.png');
+  background-image: url('../img/social-media/twitter.png');
+}
+
+.contact-info li.email a {
+  background-image: url('../img/social-media/email.png');
 }
 
 #general, #contactDetails {
   font-size: 1.5em;
   margin-bottom: 1em;
+}
+
+#primary {
+  margin-bottom: 50px;
 }
 
 
@@ -330,7 +353,7 @@ h1, h2 {
 
 /* links */
 a {
-  color: #761302;
+  color: #5b8a69;
 }
 
 /* nav link */
@@ -338,13 +361,18 @@ nav a, nav a:visited {
   color: #fff;
 }
 
-/* selected nav link */
+/* active nav link */
 nav a.active, nav a:hover {
   color: #626262;
 }
 
+.heading {
+  color: #517b5d;
+}
 
-
+.caption {
+  color: #000;
+}
 
 
 
